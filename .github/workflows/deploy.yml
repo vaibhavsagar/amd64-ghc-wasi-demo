@@ -1,3 +1,9 @@
+name: Deploy to GitHub Pages
+
+on:
+  workflow_dispatch:
+  push:
+
 jobs:
   # Single deploy job no building
   deploy:
