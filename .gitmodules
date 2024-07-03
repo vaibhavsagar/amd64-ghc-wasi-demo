@@ -1,6 +1,6 @@
 [submodule "docs/containers"]
 	path = docs/containers
-	url = https://github.com/ktock/demo-images
+	url = https://github.com/vaibhavsagar/amd64-ghc-wasi-container
 [submodule "docs/extras"]
 	path = docs/extras
 	url = https://github.com/ktock/demo-images-extra.git
