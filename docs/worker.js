@@ -19,7 +19,7 @@ function startWasi(elemId, workerFileName, workerImageNamePrefix, workerImageChu
     var netParam = getNetParam();
     if (!netParam || netParam.mode != 'none') {
         stackWorker = new Worker("./src/stack-worker.js"+location.search);
-        nwStack = newStack(worker, workerImageNamePrefix, workerImageChunks, stackWorker, location.origin + "/src/c2w-net-proxy.wasm");
+        nwStack = newStack(worker, workerImageNamePrefix, workerImageChunks, stackWorker, location.origin + "/amd64-ghc-wasi-demo" + "/src/c2w-net-proxy.wasm");
     }
     if (!nwStack) {
         worker.postMessage({type: "init", imagename: workerImageNamePrefix, chunks: workerImageChunks});
